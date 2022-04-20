@@ -1,6 +1,10 @@
 //Parar o evento de submit
 let b7Validator={
-    handle
+    handleSubmit:(event)=>{
+        event.preventDefault();
+
+        let send=true;
+    }
 }
 
 
@@ -9,5 +13,5 @@ let b7Validator={
 let form=document.querySelector('.b7validator');
 
 //eftuar monitoramento e bloqueio do botão para não enviar form antes de validar
-form.addEventListener('submit',)
+form.addEventListener('submit',b7Validator.handleSubmit);
 
