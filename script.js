@@ -15,8 +15,7 @@ let b7Validator=
             let check= b7Validator.checkInput(input);
                 if(check!==true){
                     send=false;
-                    console.log(check);
- 
+                    b7Validator.showError();
                 }
         }
 
